@@ -78,17 +78,17 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function () {
-  // Add hover behavior to dropdown menu
-  $(".dropdown").hover(
-    function () {
-      $(this).find(".dropdown-menu").stop(true, true).delay(0).fadeIn(300);
-    },
-    function () {
-      $(this).find(".dropdown-menu").stop(true, true).delay(0).fadeOut(300);
-    }
-  );
-});
+// $(document).ready(function () {
+//   // Add hover behavior to dropdown menu
+//   $(".dropdown").hover(
+//     function () {
+//       $(this).find(".dropdown-menu").stop(true, true).delay(0).fadeIn(300);
+//     },
+//     function () {
+//       $(this).find(".dropdown-menu").stop(true, true).delay(0).fadeOut(300);
+//     }
+//   );
+// });
 
 
 function toggleTab(parent) {
