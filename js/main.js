@@ -1,1 +1,78 @@
-var nav=document.querySelector("nav");function toggleTab(e){const t=document.querySelector(`#tab-${e}`),s=document.getElementById(`arrow-${e}`);s.classList.toggle("fa-angles-down",t.classList.contains("active")),s.classList.toggle("fa-angles-up",!t.classList.contains("active")),t.classList.toggle("active")}function showTab(e){document.querySelector(`#tab-${e}`).classList.toggle("active")}window.addEventListener("scroll",(function(){window.pageYOffset>100?nav.classList.add("bg-change","shadow"):nav.classList.remove("bg-change","shadow")})),$(document).ready((function(){$(".owl-carousel.main-owl").owlCarousel({loop:!0,margin:10,responsiveClass:!0,autoplay:!0,autoplayTimeout:7e3,center:!0,nav:!0,center:!0,items:3,navText:['<i class="fa-solid fa-angles-left  text-success"></i>','<i class="fa-solid fa-angles-right  text-success"></i>'],responsive:{0:{items:1},700:{items:2},1e3:{items:3},1200:{items:4}}})})),$(document).ready((function(){$(".owl-carousel.other-owl").owlCarousel({loop:!0,margin:10,responsiveClass:!0,autoplay:!0,autoplayTimeout:4e3,nav:!0,items:3,navText:['<i class="fa-solid fa-angles-left  text-success"></i>','<i class="fa-solid fa-angles-right  text-success"></i>'],responsive:{0:{items:1},600:{items:2},900:{items:3},1200:{items:4}}})})),document.getElementById("activate").addEventListener("click",(function(e){e.preventDefault(),document.getElementById("chat-card").style.display="block"})),document.getElementById("close").addEventListener("click",(function(){document.getElementById("chat-card").style.display="none"}));
+
+function toggleTab(e) {
+	const t = document.querySelector(`#tab-${e}`),
+		s = document.getElementById(`arrow-${e}`);
+	s.classList.toggle("fa-angles-down", t.classList.contains("active")),
+		s.classList.toggle("fa-angles-up", !t.classList.contains("active")),
+		t.classList.toggle("active");
+}
+function showTab(e) {
+	document.querySelector(`#tab-${e}`).classList.toggle("active");
+}
+	$(document).ready(function () {
+		$(".owl-carousel.main-owl").owlCarousel({
+			loop: true,
+			margin: 10,
+			responsiveClass: true,
+			autoplay: true,
+			autoplayTimeout: 5000, // Change slide after every 2 seconds
+			autoplayHoverPause: true, // Pause autoplay on hover
+			center: false,
+			nav: true,
+			navText: [
+				'<i class="fa-solid fa-angle-left text-success"></i>',
+				'<i class="fa-solid fa-angle-right text-success"></i>',
+			],
+			items: 3,
+			responsive: {
+				0: {
+					items: 1,
+				},
+				768: {
+					items: 2,
+				},
+				992: {
+					items: 3,
+				},
+			},
+		});
+	});
+
+	$(document).ready(function () {
+		$(".owl-carousel.other-owl").owlCarousel({
+			loop: true,
+			margin: 10,
+			responsiveClass: true,
+			autoplay: true,
+			autoplayTimeout: 5000, // Change slide after every 5 seconds
+			autoplayHoverPause: true, // Pause autoplay on hover
+			nav: true,
+			navText: [
+				'<i class="fa-solid fa-angle-left text-success"></i>',
+				'<i class="fa-solid fa-angle-right text-success"></i>',
+			],
+			items: 4, // Show 4 items on big screens
+			responsive: {
+				0: {
+					items: 1,
+				},
+				600: {
+					items: 2,
+				},
+				900: {
+					items: 3,
+				},
+				1200: {
+					items: 4,
+				},
+			},
+		});
+	});
+
+	document.getElementById("activate").addEventListener("click", function (e) {
+		e.preventDefault(),
+			(document.getElementById("chat-card").style.display = "block");
+	}),
+	document.getElementById("close").addEventListener("click", function () {
+		document.getElementById("chat-card").style.display = "none";
+	});
