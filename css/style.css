@@ -8,7 +8,6 @@
 
 html,
 body {
-	background-color: rgb(236, 232, 232);
 	font-family: "Montserrat", sans-serif;
 }
 * {
@@ -156,21 +155,28 @@ body {
 .form-label {
 	font-size: 0.85rem !important;
 }
-.owl-nav .owl-next {
+.owl-nav .owl-next,.owl-nav .owl-prev  {
 	position: absolute;
 	top: calc(40% - 25px);
-	right: -20px;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--warning) !important;
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
 	opacity: 1;
 	font-size: 30px !important;
 	z-index: 1;
+	border: 1px solid white !important;
+	margin-right: 10px !important;
+}
+.owl-nav .owl-next {
+	right: -8%;
 }
 .owl-nav .owl-prev {
-	position: absolute;
-	top: calc(40% - 25px);
-	left: -20px;
-	opacity: 1;
-	font-size: 30px !important;
-	z-index: 1;
+	left: -5%;
 }
 #navbarNav > ul > li > a {
 	color: var(--white) !important;
