@@ -173,10 +173,10 @@ body {
 	margin-right: 10px !important;
 }
 .owl-nav .owl-next {
-	right: -8%;
+	right: 0;
 }
 .owl-nav .owl-prev {
-	left: -5%;
+	left: 0;
 }
 #navbarNav > ul > li > a {
 	color: var(--white) !important;
