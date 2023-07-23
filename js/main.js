@@ -20,8 +20,8 @@ function showTab(e) {
 			center: false,
 			nav: true,
 			navText: [
-				'<i class="fa-solid fa-angle-left text-success"></i>',
-				'<i class="fa-solid fa-angle-right text-success"></i>',
+				'<i class="fa-solid fa-angle-left text-white"></i>',
+				'<i class="fa-solid fa-angle-right text-white"></i>',
 			],
 			items: 3,
 			responsive: {
