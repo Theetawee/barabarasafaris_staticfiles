@@ -1,4 +1,4 @@
-                var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?31376';
+                var url ="https://theetawee.github.io/barabarasafaris_staticfiles/js/wati.js";
                 var s = document.createElement('script');
                 s.type = 'text/javascript';
                 s.async = true;

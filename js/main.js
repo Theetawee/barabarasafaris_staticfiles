@@ -69,10 +69,4 @@ function showTab(e) {
 		});
 	});
 
-	document.getElementById("activate").addEventListener("click", function (e) {
-		e.preventDefault(),
-			(document.getElementById("chat-card").style.display = "block");
-	}),
-	document.getElementById("close").addEventListener("click", function () {
-		document.getElementById("chat-card").style.display = "none";
-	});
+	
